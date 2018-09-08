@@ -1,2 +1,2 @@
-# PYTHON_ATE
+#ATE
 Bench automation using python pyvisa
