@@ -1,0 +1,41 @@
+1. install anaconda 32bit python2... this is preferred in automation due to compatibility
+2. install pyvisa. Start>All Programs>Anaconda2>Anaconda Prompt>Type pip install pyvisa
+type pip install python-docx      for document image insertion
+
+
+OR for non anaconda python...
+TO INSTALL PYVISA
+open CMD and type C:/Python27/Scripts/pip install pyvisa (or copy paste it)
+TO INSTALL PANDAS
+open CMD and type C:/Python27/Scripts/pip install pandas (or copy paste it)
+
+
+Install Keysight COnnection Expert(IO Lib Suite) and Keysight Command Expert(Command Expert)
+
+
+For LiClipse IDE
+Insatll LiClipse IDE
+Save ATE folder on degfault Liclipse workspace(sample:"C:\Users\hwtester\Documents\LiClipse Workspace\ATE\edn python automation.py")
+Open LiClipse
+Save ATE folder on degfault Liclipse workspace
+File>Open Project from File system>Browse to"ATE"
+Left Click ATE>Properties>PyDev Interpreter/Grammar  Click "Please configure an interpreter before proceding"
+New>Interpreter Name Python2.7> Interpreter Executable:Browse to python 2 directory (C:Program Data/Anaconda2/Python.exe
+
+Open Keysight IO and determine VISA address of connected equipments, used these visa addresses to the python program 
+
+
+Cloning from GIT
+On LiClipse, Click GIT(Upper Left Side), Click "Clone a Git Repository" use the ff example:
+URI:https://github.com/exequielquinto/ATE.git and enter your username and password.
+Select directory and continue....
+
+TO edit file from repository and then upload changes:
+1. edit file, press save
+2. Go to "Git Staging" double click on the edited file
+3. On the upper left, confirm changes by clicking "Copy from left to right" (Little arrow button)
+4. SAve and click "Commit and Push"
+
+TO USE CLONED GIT FILE TO RUN AND EDIT IN YOUR PC
+1. Go to PyDev(Upper RIGHT next to Git)
+2. File>OPEN>Projects from FILE SYSTEM> and browse to save directory for GIT cloned file
