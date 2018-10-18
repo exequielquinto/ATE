@@ -3,7 +3,7 @@ import time
 # start of Untitled
 
 rm = visa.ResourceManager()
-scope = rm.open_resource('TCPIP0::10.1.17.5::inst0::INSTR')
+scope = rm.open_resource('USB0::0x0699::0x0413::C026422::0::INSTR')
 print scope.query('*IDN?')
 
 
