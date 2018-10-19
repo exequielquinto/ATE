@@ -1,7 +1,7 @@
 import visa, time
 
 rm = visa.ResourceManager()
-scope = rm.open_resource('USB0::0x0699::0x0408::C030077::0::INSTR')
+scope = rm.open_resource('USB0::0x0699::0x0413::C026422::0::INSTR')
 print scope.query('*IDN?')
 
 x=131
@@ -32,7 +32,7 @@ fid.close()
 #print scope.query('DATA:SOURCE?')
 #print scope.write('MEASU:MEAS1:VAL?')
 #print scope.write('CURVE?')
-#scope.write('MEASUrement:STATIstics:MODE OFF')     #statistics off or on
+
 #print scope.write('MEASU:MEAS3:VAL?')
 #print scope.write('MEASure:VMAX %s' % ('CHANNEL3'))
 #print 1
